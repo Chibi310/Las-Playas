@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AFFF77227D7F6410011B3E6 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */; };
+		9AFFF77327D7F6410011B3E6 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */; };
+		9AFFF77527D7F66F0011B3E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77427D7F66F0011B3E6 /* Constants.swift */; };
+		9AFFF77727D7F74F0011B3E6 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77627D7F74F0011B3E6 /* UserData.swift */; };
 		C236A5A227CD789600FE3B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236A5A127CD789600FE3B4D /* AppDelegate.swift */; };
 		C236A5A427CD789600FE3B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236A5A327CD789600FE3B4D /* SceneDelegate.swift */; };
 		C236A5A627CD789600FE3B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236A5A527CD789600FE3B4D /* ViewController.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
+		9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		9AFFF77427D7F66F0011B3E6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9AFFF77627D7F74F0011B3E6 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C236A59E27CD789600FE3B4D /* Las Playas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Las Playas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C236A5A127CD789600FE3B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C236A5A327CD789600FE3B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 		C236A5A027CD789600FE3B4D /* Las Playas */ = {
 			isa = PBXGroup;
 			children = (
+				9AFFF77627D7F74F0011B3E6 /* UserData.swift */,
+				9AFFF77427D7F66F0011B3E6 /* Constants.swift */,
+				9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */,
+				9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */,
 				C236A5A127CD789600FE3B4D /* AppDelegate.swift */,
 				C236A5A327CD789600FE3B4D /* SceneDelegate.swift */,
 				C236A5A527CD789600FE3B4D /* ViewController.swift */,
@@ -162,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */,
+				9AFFF77227D7F6410011B3E6 /* FoodTableViewCell.xib in Resources */,
 				C236A5AE27CD789700FE3B4D /* Assets.xcassets in Resources */,
 				C236A5A927CD789600FE3B4D /* Main.storyboard in Resources */,
 			);
@@ -175,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2746F5B27D7EBD9002001B9 /* Gym.swift in Sources */,
+				9AFFF77527D7F66F0011B3E6 /* Constants.swift in Sources */,
 				C2746F6427D7EC17002001B9 /* Game.swift in Sources */,
 				C291A63127D77B2000687C63 /* RegScreen.swift in Sources */,
 				C2746F6027D7EBFB002001B9 /* Settings.swift in Sources */,
@@ -185,8 +199,10 @@
 				C2746F5927D7E967002001B9 /* Room.swift in Sources */,
 				C291A62A27D76C7000687C63 /* DBD+CoreDataClass.swift in Sources */,
 				C236A5A227CD789600FE3B4D /* AppDelegate.swift in Sources */,
+				9AFFF77727D7F74F0011B3E6 /* UserData.swift in Sources */,
 				C236A5A427CD789600FE3B4D /* SceneDelegate.swift in Sources */,
 				C2746F5727D7A0A8002001B9 /* CentralMenu.swift in Sources */,
+				9AFFF77327D7F6410011B3E6 /* FoodTableViewCell.swift in Sources */,
 				C2746F6227D7EC0B002001B9 /* Feedback.swift in Sources */,
 				C291A62F27D7711300687C63 /* DBSource.swift in Sources */,
 			);
