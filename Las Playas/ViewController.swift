@@ -22,28 +22,9 @@ class ViewController: UIViewController {
     @IBAction func SignIn(_ sender: Any)
     {
         
-        let check: DBD? = DBSource.instance.CheckUserData(UserName.text!);
+        let RC = storyboard?.instantiateViewController(identifier: "Signin_Screen") as! SIScreen;
         
-        if let unwrapped = check
-        {
-           print("User Found:", String(unwrapped.userName!), "\nPassword:", String(unwrapped.password!));
-            if(nil != Password.text)
-            {
-                if(unwrapped.password == Password.text!)
-                {
-                    let RC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
-                    present(RC, animated: true);
-                }
-                else
-                {
-                    print("Password Does Not Match...");
-                }
-            }
-        }
-        else
-        {
-            print("User not found...");
-        }
+        present(RC, animated: true);
     }
     
     @IBAction func RegScrn()

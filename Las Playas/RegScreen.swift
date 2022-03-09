@@ -25,4 +25,9 @@ class RegScreen: UIViewController {
         self.dismiss(animated: true, completion: nil);
     }
     
+    @IBAction func CancelRegistration()
+    {
+        self.dismiss(animated: true, completion: nil);
+    }
+    
 }

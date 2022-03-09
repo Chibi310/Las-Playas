@@ -28,6 +28,8 @@
 		C291A62B27D76C7000687C63 /* DBD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291A62927D76C7000687C63 /* DBD+CoreDataProperties.swift */; };
 		C291A62F27D7711300687C63 /* DBSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291A62E27D7711300687C63 /* DBSource.swift */; };
 		C291A63127D77B2000687C63 /* RegScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291A63027D77B2000687C63 /* RegScreen.swift */; };
+		C29DC54127D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png in Resources */ = {isa = PBXBuildFile; fileRef = C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */; };
+		C29DC54327D923FE005D6F1E /* SIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29DC54227D923FE005D6F1E /* SIScreen.swift */; };
 		C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */; };
 		C2FD85CD27D90A4A00DDDDBD /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD85CC27D90A4A00DDDDBD /* Gym.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		C291A62927D76C7000687C63 /* DBD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C291A62E27D7711300687C63 /* DBSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSource.swift; sourceTree = "<group>"; };
 		C291A63027D77B2000687C63 /* RegScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegScreen.swift; sourceTree = "<group>"; };
+		C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2022_03_09_0i8_Kleki.png; sourceTree = "<group>"; };
+		C29DC54227D923FE005D6F1E /* SIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIScreen.swift; sourceTree = "<group>"; };
 		C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resort_Logo.png; sourceTree = "<group>"; };
 		C2FD85CC27D90A4A00DDDDBD /* Gym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +118,8 @@
 				C2FD85CC27D90A4A00DDDDBD /* Gym.swift */,
 				C2746F5C27D7EBE2002001B9 /* Food.swift */,
 				C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */,
+				C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */,
+				C29DC54227D923FE005D6F1E /* SIScreen.swift */,
 			);
 			path = "Las Playas";
 			sourceTree = "<group>";
@@ -176,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29DC54127D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png in Resources */,
 				C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */,
 				9AFFF77227D7F6410011B3E6 /* FoodTableViewCell.xib in Resources */,
 				C236A5AE27CD789700FE3B4D /* Assets.xcassets in Resources */,
@@ -205,6 +212,7 @@
 				C236A5A227CD789600FE3B4D /* AppDelegate.swift in Sources */,
 				9AFFF77727D7F74F0011B3E6 /* UserData.swift in Sources */,
 				C236A5A427CD789600FE3B4D /* SceneDelegate.swift in Sources */,
+				C29DC54327D923FE005D6F1E /* SIScreen.swift in Sources */,
 				C2746F5727D7A0A8002001B9 /* CentralMenu.swift in Sources */,
 				9AFFF77327D7F6410011B3E6 /* FoodTableViewCell.swift in Sources */,
 				C2746F6227D7EC0B002001B9 /* Feedback.swift in Sources */,
