@@ -22,7 +22,12 @@ struct r {
     static let foodRateCellIdentifier = "FoodRatingViewCell"
     static let foodRateNibName = "FoodRatingTableViewCell"
     static let backToSurveyHome = "BackToHome"
-
+    static let hometoDelete = "HomeToDelete"
+    static let deleteTableViewCell = "DeleteTableViewCell"
+    static let deleteNibName = "DeleteTableViewCell"
+    static let backToFeedbackHome = "BackToFeedbackHome"
+    static let feedbackSegue = "OverAllFeedback"
+    
     static let questions = [
         "1. The food is served fresh and hot.",
         "2. The menu has a good variety of items.",

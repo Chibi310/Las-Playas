@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="te6-FX-Pw0">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -276,22 +276,79 @@
         <!--Feedback-->
         <scene sceneID="Xox-tz-fne">
             <objects>
-                <viewController storyboardIdentifier="Overall_Feedback" id="te6-FX-Pw0" customClass="Feedback" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Overall_Feedback" modalPresentationStyle="fullScreen" id="te6-FX-Pw0" customClass="Feedback" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zTg-q9-THP">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feedback Test Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0X-Bd-jCj">
-                                <rect key="frame" x="178" y="296" width="157" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wFs-xC-Z9o">
+                                <rect key="frame" x="0.0" y="80" width="428" height="540"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="540" id="oHZ-g9-C0H"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/500" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEU-FW-TAo">
+                                <rect key="frame" x="20" y="628" width="388" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="BrandYellow"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKE-f1-2NB">
+                                <rect key="frame" x="0.0" y="690" width="428" height="60"/>
+                                <color key="backgroundColor" name="BrandBrightRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="x6g-kh-a05"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" name="BrandOrange"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitFeedback:" destination="te6-FX-Pw0" eventType="touchUpInside" id="aCk-aJ-kI3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XH-zF-1Yf">
+                                <rect key="frame" x="0.0" y="758" width="428" height="60"/>
+                                <color key="backgroundColor" name="BrandOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lXA-Po-Jzt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="BrandBrightRed"/>
+                                </state>
+                                <connections>
+                                    <action selector="backFeedback:" destination="te6-FX-Pw0" eventType="touchUpInside" id="XyC-ZC-gnN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cx3-NN-URj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="BrandDarkRed"/>
+                        <constraints>
+                            <constraint firstItem="wFs-xC-Z9o" firstAttribute="leading" secondItem="cx3-NN-URj" secondAttribute="leading" id="2B1-8f-bQw"/>
+                            <constraint firstItem="1XH-zF-1Yf" firstAttribute="leading" secondItem="cx3-NN-URj" secondAttribute="leading" id="7oi-Ja-TCz"/>
+                            <constraint firstItem="cx3-NN-URj" firstAttribute="trailing" secondItem="DEU-FW-TAo" secondAttribute="trailing" constant="20" id="8GM-rE-uLH"/>
+                            <constraint firstItem="wFs-xC-Z9o" firstAttribute="top" secondItem="cx3-NN-URj" secondAttribute="top" constant="36" id="CLD-Du-Y6E"/>
+                            <constraint firstItem="eKE-f1-2NB" firstAttribute="leading" secondItem="cx3-NN-URj" secondAttribute="leading" id="CxN-M6-LZ4"/>
+                            <constraint firstItem="1XH-zF-1Yf" firstAttribute="top" secondItem="eKE-f1-2NB" secondAttribute="bottom" constant="8" symbolic="YES" id="RzN-I6-XQ0"/>
+                            <constraint firstItem="DEU-FW-TAo" firstAttribute="top" secondItem="wFs-xC-Z9o" secondAttribute="bottom" constant="8" symbolic="YES" id="Wwb-DD-OIR"/>
+                            <constraint firstItem="DEU-FW-TAo" firstAttribute="leading" secondItem="cx3-NN-URj" secondAttribute="leading" constant="20" id="gBS-0E-JNy"/>
+                            <constraint firstItem="1XH-zF-1Yf" firstAttribute="trailing" secondItem="cx3-NN-URj" secondAttribute="trailing" id="iRD-BN-caa"/>
+                            <constraint firstItem="wFs-xC-Z9o" firstAttribute="trailing" secondItem="cx3-NN-URj" secondAttribute="trailing" id="nSB-sq-z8a"/>
+                            <constraint firstItem="eKE-f1-2NB" firstAttribute="top" secondItem="DEU-FW-TAo" secondAttribute="bottom" constant="41" id="sIo-EO-CtK"/>
+                            <constraint firstItem="eKE-f1-2NB" firstAttribute="trailing" secondItem="cx3-NN-URj" secondAttribute="trailing" id="sQR-XG-GC1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="feedbackLabel" destination="DEU-FW-TAo" id="KPX-Ct-9Xa"/>
+                        <outlet property="feedbackTextView" destination="wFs-xC-Z9o" id="CHV-9D-I7D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSF-In-25V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -380,6 +437,12 @@
         <namedColor name="BrandOrange">
             <color red="0.92156862745098034" green="0.50980392156862742" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="BrandYellow">
+            <color red="0.96470588235294119" green="0.85490196078431369" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
