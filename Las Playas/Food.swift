@@ -183,4 +183,9 @@ extension Food: UITableViewDelegate {
         
     }
     
+    
+    @IBAction func goback()
+    {
+        self.dismiss(animated: true, completion: nil);
+    }
 }

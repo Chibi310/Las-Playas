@@ -165,6 +165,15 @@
                                     <action selector="Settings_Menu" destination="qm9-gf-ZyG" eventType="touchUpInside" id="lc1-7o-9fh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQG-8e-1fm">
+                                <rect key="frame" x="75" y="799" width="115" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Sign Out"/>
+                                <connections>
+                                    <action selector="logout" destination="qm9-gf-ZyG" eventType="touchUpInside" id="SQq-bP-dWV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tJ8-pT-m3B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -172,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ox-xM-7Ck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773" y="470"/>
+            <point key="canvasLocation" x="1771.9626168224297" y="469.76241900647949"/>
         </scene>
         <!--Food-->
         <scene sceneID="QWv-Id-FVi">
@@ -210,6 +219,9 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" name="BrandBrightRed"/>
                                 </state>
+                                <connections>
+                                    <action selector="goback" destination="6Vy-Yt-p9T" eventType="touchUpInside" id="TMn-HH-s70"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mr-At-DQX">
                                 <rect key="frame" x="0.0" y="675" width="428" height="60"/>

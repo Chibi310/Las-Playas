@@ -55,4 +55,9 @@ class CentralMenu: UIViewController {
         
         present(RC, animated: true);
     }
+    
+    @IBAction func logout()
+    {
+        self.dismiss(animated: true, completion: nil);
+    }
 }
