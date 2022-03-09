@@ -43,10 +43,7 @@ class Feedback: UIViewController {
     }
     
     @IBAction func backFeedback(_ sender: UIButton) {
-        
-        let hvc = storyboard?.instantiateViewController(withIdentifier: "Main_Menu") as! CentralMenu
-        present(hvc, animated: true, completion: nil)
-        
+        self.dismiss(animated: true, completion: nil);
     }
     
     func showAlertDialog(dtype: String, msg: String, style: String, controller: String) {

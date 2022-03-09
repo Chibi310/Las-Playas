@@ -52,6 +52,7 @@ class Gym : UIViewController {
         
         DBSource.instance.addData(q1: q1Value.text!, q2: q2Value.text!, q3: q3Value.text!, com: commentBox.text!)
         
+        self.dismiss(animated: true, completion: nil)
         }
         
     }
