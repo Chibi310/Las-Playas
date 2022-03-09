@@ -112,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WF-D8-fQx">
-                                <rect key="frame" x="106" y="204" width="62" height="31"/>
+                                <rect key="frame" x="75" y="200" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Room"/>
@@ -121,7 +121,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXu-iJ-PpH">
-                                <rect key="frame" x="298" y="208" width="67" height="31"/>
+                                <rect key="frame" x="250" y="200" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Gym"/>
@@ -130,7 +130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l64-Qt-8kc">
-                                <rect key="frame" x="108" y="315" width="57" height="31"/>
+                                <rect key="frame" x="75" y="350" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Food"/>
@@ -139,7 +139,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USU-ro-hI9">
-                                <rect key="frame" x="301" y="315" width="62" height="31"/>
+                                <rect key="frame" x="250" y="350" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Game"/>
@@ -147,22 +147,22 @@
                                     <action selector="Game_Menu" destination="qm9-gf-ZyG" eventType="touchUpInside" id="eHY-0M-5vJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcI-Xw-ZiH">
-                                <rect key="frame" x="98" y="422" width="78" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Settings"/>
-                                <connections>
-                                    <action selector="Settings_Menu" destination="qm9-gf-ZyG" eventType="touchUpInside" id="lc1-7o-9fh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3i-bo-baM">
-                                <rect key="frame" x="288" y="422" width="88" height="31"/>
+                                <rect key="frame" x="250" y="500" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Feedback"/>
                                 <connections>
                                     <action selector="Overall_Feedback_Menu" destination="qm9-gf-ZyG" eventType="touchUpInside" id="9tR-I0-rYr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcI-Xw-ZiH">
+                                <rect key="frame" x="75" y="500" width="115" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Settings"/>
+                                <connections>
+                                    <action selector="Settings_Menu" destination="qm9-gf-ZyG" eventType="touchUpInside" id="lc1-7o-9fh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,7 +177,7 @@
         <!--Food-->
         <scene sceneID="QWv-Id-FVi">
             <objects>
-                <viewController storyboardIdentifier="Food_Menu" modalPresentationStyle="fullScreen" id="6Vy-Yt-p9T" customClass="Food" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Food_Menu" id="6Vy-Yt-p9T" customClass="Food" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PVf-E3-wWi">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
