@@ -19,9 +19,12 @@ struct r {
     static let foodCellIdentifier = "FoodViewCell"
     static let foodNibName = "FoodTableViewCell"
     static let foodSegue = "FoodSurvey"
+    static let roomSegue = "RoomSurvey"
+
     static let foodRateCellIdentifier = "FoodRatingViewCell"
     static let foodRateNibName = "FoodRatingTableViewCell"
     static let backToSurveyHome = "BackToHome"
+    static let roomBackToSurveyHome = "RoomBackToHome"
     static let hometoDelete = "HomeToDelete"
     static let deleteTableViewCell = "DeleteTableViewCell"
     static let deleteNibName = "DeleteTableViewCell"
@@ -47,4 +50,16 @@ struct r {
 //        "16. Prices are competitive."
     ]
     
+    static let roomQuestions = [
+        "1. What was the reason for your visit?",
+        "2. Were you alone or in a group?",
+        "3. Why did you choose this hotel?",
+        "4. How did you book your stay with us?",
+        "5. Were the staff friendly and helpful?",
+        "6. Did the staff respond quickly?",
+        "7. Was your room comfortable and clean?",
+        "8. Did you eat at the hotel?",
+        "9. How would you rate the hotel food?",
+        "10. Do you think that the hotel provides value for money?",
+    ]
 }

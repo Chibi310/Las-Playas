@@ -82,6 +82,8 @@ extension SurveyOptionsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         switch indexPath.item {
+        case 0:
+            performSegue(withIdentifier: r.roomSegue, sender: self)
             case 2:
                 //print("Time To Answer Survey")
                 performSegue(withIdentifier: r.foodSegue, sender: self)

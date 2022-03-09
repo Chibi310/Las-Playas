@@ -1,16 +1,17 @@
 //
-//  FoodSurveyViewController.swift
+//  RoomSurveyViewController.swift
 //  ResortFeedback-IOS
 //
-//  Created by Maricel Sumulong on 3/6/22.
+//  Created by Pablo De La Cruz on 3/9/22.
 //
+
 
 import UIKit
 
-class FoodSurveyViewController: UIViewController {
+class RoomSurveyViewController: UIViewController {
 
-    @IBOutlet weak var foodTableView: UITableView!
     
+    @IBOutlet weak var roomTableView: UITableView!
     var tallyScore : [String : Int] = [:]
     
     override func viewDidLoad() {
@@ -18,22 +19,18 @@ class FoodSurveyViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        foodTableView.delegate = self
-        foodTableView.dataSource = self
-//        foodTableView.register(UINib(nibName: r.foodNibName, bundle: nil), forCellReuseIdentifier: r.foodCellIdentifier)
-//        foodTableView.register(UINib(nibName: r.foodRateNibName, bundle: nil), forCellReuseIdentifier: r.foodRateCellIdentifier)
-//        @IBOutlet weak var : UITableView!
-        foodTableView.register(UINib(nibName: r.foodNibName, bundle: nil), forCellReuseIdentifier: r.foodCellIdentifier)
+        roomTableView.delegate = self
+        roomTableView.dataSource = self
+        roomTableView.register(UINib(nibName: r.foodNibName, bundle: nil), forCellReuseIdentifier: r.foodCellIdentifier)
         
     }
-    
-    @IBAction func submitFoodResponse(_ sender: UIButton) {
-        
-        let scoreArray = [Int](repeating: 0, count: r.questions.count)
-        var tallyArray = ["Food":scoreArray]
+
+    @IBAction func submitRoomResponse(_ sender: Any) {
+        let scoreArray = [Int](repeating: 0, count: r.roomQuestions.count)
+        var tallyArray = ["Room":scoreArray]
         
         for key in UserData.tallyScore.keys {
-            tallyArray["Food"]![Int(key)!] = UserData.tallyScore[key]!
+            tallyArray["Room"]![Int(key)!] = UserData.tallyScore[key]!
             
         }
         
@@ -44,7 +41,7 @@ class FoodSurveyViewController: UIViewController {
 
         if isSuccess == true {
 
-            showAlertDialog(dtype: "Alert", msg: "Response Successfully Saved! Redirecting You Back To Survey Home Page", style: "alert", controller : r.backToSurveyHome)
+            showAlertDialog(dtype: "Alert", msg: "Response Successfully Saved! Redirecting You Back To Survey Home Page", style: "alert", controller : r.roomBackToSurveyHome)
 
             //print("Under Construction!")
 
@@ -53,8 +50,6 @@ class FoodSurveyViewController: UIViewController {
             showAlertDialog(dtype: "Alert", msg: "Response Not Successfully Saved.", style: "alert", controller: "")
 
           }
-        
-        
     }
     
     func showAlertDialog(dtype: String, msg: String, style: String, controller: String) {
@@ -97,7 +92,7 @@ class FoodSurveyViewController: UIViewController {
 
 }
 
-extension FoodSurveyViewController: UITableViewDataSource {
+extension RoomSurveyViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -106,7 +101,7 @@ extension FoodSurveyViewController: UITableViewDataSource {
             case 0:
                 //print("ROWS: ",r.questions.count * 2)
                 //return r.questions.count + 1
-            return min(r.questions.count, 15)
+            return min(r.roomQuestions.count, 10)
             default:
                 return 0
             
@@ -122,7 +117,7 @@ extension FoodSurveyViewController: UITableViewDataSource {
             
                 let cell = tableView.dequeueReusableCell(withIdentifier: r.foodCellIdentifier, for: indexPath) as! FoodTableViewCell
                 
-                cell.question.text = r.questions[indexPath.row]
+                cell.question.text = r.roomQuestions[indexPath.row]
                 let qNum = indexPath.row
                 cell.fRateImage1.accessibilityIdentifier = String(qNum)+"-1"
                 cell.fRateImage2.accessibilityIdentifier = String(qNum)+"-2"
@@ -154,7 +149,7 @@ extension FoodSurveyViewController: UITableViewDataSource {
     
 }
 
-extension FoodSurveyViewController: UITableViewDelegate {
+extension RoomSurveyViewController: UITableViewDelegate {
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
@@ -165,7 +160,7 @@ extension FoodSurveyViewController: UITableViewDelegate {
         if UserData.tallyScore.count != 0 {
             for key in UserData.tallyScore.keys{
                 let indexPath = IndexPath(row: Int(key)!, section: 0)
-                let cell = foodTableView.cellForRow(at: indexPath) as? FoodTableViewCell
+                let cell = roomTableView.cellForRow(at: indexPath) as? FoodTableViewCell
                 let selected = UserData.tallyScore[key]
 
                 switch selected {
