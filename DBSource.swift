@@ -51,6 +51,25 @@ class DBSource
         return Usr;
     }
     
+    func addData(q1: String, q2: String, q3: String, com: String)
+    {
+        let cust = NSEntityDescription.insertNewObject(forEntityName: "DBD", into: Context!) as! DBD
+        
+        cust.q1Rating = q1
+        cust.q2Rating = q2
+        cust.q3Rating = q3
+        cust.comments = com
+        
+        do
+        {
+            try Context?.save()
+        }
+        catch
+        {
+            print("Data not saved")
+        }
+    }
+    
     func submitFeedback(u: String, f: String) -> Bool {
         
         var st = DBD()

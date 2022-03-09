@@ -20,7 +20,6 @@
 		C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C236A5AF27CD789700FE3B4D /* LaunchScreen.storyboard */; };
 		C2746F5727D7A0A8002001B9 /* CentralMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5627D7A0A8002001B9 /* CentralMenu.swift */; };
 		C2746F5927D7E967002001B9 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5827D7E967002001B9 /* Room.swift */; };
-		C2746F5B27D7EBD9002001B9 /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5A27D7EBD9002001B9 /* Gym.swift */; };
 		C2746F5D27D7EBE2002001B9 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5C27D7EBE2002001B9 /* Food.swift */; };
 		C2746F6027D7EBFB002001B9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5F27D7EBFB002001B9 /* Settings.swift */; };
 		C2746F6227D7EC0B002001B9 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F6127D7EC0B002001B9 /* Feedback.swift */; };
@@ -29,6 +28,8 @@
 		C291A62B27D76C7000687C63 /* DBD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291A62927D76C7000687C63 /* DBD+CoreDataProperties.swift */; };
 		C291A62F27D7711300687C63 /* DBSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291A62E27D7711300687C63 /* DBSource.swift */; };
 		C291A63127D77B2000687C63 /* RegScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C291A63027D77B2000687C63 /* RegScreen.swift */; };
+		C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */; };
+		C2FD85CD27D90A4A00DDDDBD /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD85CC27D90A4A00DDDDBD /* Gym.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,6 @@
 		C236A5B227CD789700FE3B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2746F5627D7A0A8002001B9 /* CentralMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMenu.swift; sourceTree = "<group>"; };
 		C2746F5827D7E967002001B9 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
-		C2746F5A27D7EBD9002001B9 /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
 		C2746F5C27D7EBE2002001B9 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		C2746F5F27D7EBFB002001B9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C2746F6127D7EC0B002001B9 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
@@ -56,6 +56,8 @@
 		C291A62927D76C7000687C63 /* DBD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DBD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C291A62E27D7711300687C63 /* DBSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBSource.swift; sourceTree = "<group>"; };
 		C291A63027D77B2000687C63 /* RegScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegScreen.swift; sourceTree = "<group>"; };
+		C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resort_Logo.png; sourceTree = "<group>"; };
+		C2FD85CC27D90A4A00DDDDBD /* Gym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +111,9 @@
 				C2746F6327D7EC17002001B9 /* Game.swift */,
 				C2746F6127D7EC0B002001B9 /* Feedback.swift */,
 				C2746F5F27D7EBFB002001B9 /* Settings.swift */,
-				C2746F5A27D7EBD9002001B9 /* Gym.swift */,
+				C2FD85CC27D90A4A00DDDDBD /* Gym.swift */,
 				C2746F5C27D7EBE2002001B9 /* Food.swift */,
+				C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */,
 			);
 			path = "Las Playas";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */,
 				9AFFF77227D7F6410011B3E6 /* FoodTableViewCell.xib in Resources */,
 				C236A5AE27CD789700FE3B4D /* Assets.xcassets in Resources */,
+				C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */,
 				C236A5A927CD789600FE3B4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2746F5B27D7EBD9002001B9 /* Gym.swift in Sources */,
 				9AFFF77527D7F66F0011B3E6 /* Constants.swift in Sources */,
 				C2746F6427D7EC17002001B9 /* Game.swift in Sources */,
 				C291A63127D77B2000687C63 /* RegScreen.swift in Sources */,
@@ -195,6 +198,7 @@
 				C291A62B27D76C7000687C63 /* DBD+CoreDataProperties.swift in Sources */,
 				C236A5AC27CD789600FE3B4D /* Las_Playas.xcdatamodeld in Sources */,
 				C236A5A627CD789600FE3B4D /* ViewController.swift in Sources */,
+				C2FD85CD27D90A4A00DDDDBD /* Gym.swift in Sources */,
 				C2746F5D27D7EBE2002001B9 /* Food.swift in Sources */,
 				C2746F5927D7E967002001B9 /* Room.swift in Sources */,
 				C291A62A27D76C7000687C63 /* DBD+CoreDataClass.swift in Sources */,

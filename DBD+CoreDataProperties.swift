@@ -2,7 +2,7 @@
 //  DBD+CoreDataProperties.swift
 //  Las Playas
 //
-//  Created by Maricel Sumulong on 3/9/22.
+//  Created by Christopher Medina on 3/9/22.
 //
 //
 
@@ -18,7 +18,10 @@ extension DBD {
 
     @NSManaged public var password: String?
     @NSManaged public var userName: String?
-    @NSManaged public var feedback: String?
+    @NSManaged public var q1Rating: String?
+    @NSManaged public var q2Rating: String?
+    @NSManaged public var q3Rating: String?
+    @NSManaged public var comments: String?
 
 }
 
