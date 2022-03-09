@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CentralMenu: UIViewController {
+class CentralMenu_Back: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

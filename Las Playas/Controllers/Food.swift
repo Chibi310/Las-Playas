@@ -26,7 +26,7 @@ class Food: UIViewController {
     
     @IBAction func submitFoodResponse(_ sender: UIButton) {
         
-        var scoreArray = [Int](repeating: 0, count: r.questions.count)
+        let scoreArray = [Int](repeating: 0, count: questions.foodQuestions.count)
         var tallyArray : [String : [Int]] = ["Food": scoreArray]
         
         for key in UserData.tallyScore.keys {
@@ -102,7 +102,7 @@ extension Food: UITableViewDataSource {
             case 0:
                 //print("ROWS: ",r.questions.count * 2)
                 //return r.questions.count + 1
-            return min(r.questions.count, 15)
+            return min(questions.foodQuestions.count, 15)
             default:
                 return 0
             
@@ -118,7 +118,7 @@ extension Food: UITableViewDataSource {
             
                 let cell = tableView.dequeueReusableCell(withIdentifier: r.foodCellIdentifier, for: indexPath) as! FoodTableViewCell
                 
-                cell.question.text = r.questions[indexPath.row]
+                cell.question.text = questions.foodQuestions[indexPath.row]
                 let qNum = indexPath.row
                 cell.fRateImage1.accessibilityIdentifier = String(qNum)+"-1"
                 cell.fRateImage2.accessibilityIdentifier = String(qNum)+"-2"

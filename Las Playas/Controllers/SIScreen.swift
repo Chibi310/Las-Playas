@@ -30,6 +30,7 @@ class SIScreen: UIViewController {
             {
                 if(unwrapped.password == Password.text!)
                 {
+                    UserData.userInfo = UserName.text!
                     let RC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
                     present(RC, animated: true);
                 }

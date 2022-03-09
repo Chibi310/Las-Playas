@@ -27,8 +27,12 @@ struct r {
     static let deleteNibName = "DeleteTableViewCell"
     static let backToFeedbackHome = "BackToFeedbackHome"
     static let feedbackSegue = "OverAllFeedback"
+
+}
+
+struct questions {
     
-    static let questions = [
+    static let foodQuestions = [
         "1. The food is served fresh and hot.",
         "2. The menu has a good variety of items.",
         "3. The quality of food is excellent.",
@@ -45,6 +49,48 @@ struct r {
 //        "14 The value for price paid was excellent.",
 //        "15. The food is a good value for the dollar.",
 //        "16. Prices are competitive."
+    ]
+    
+}
+
+struct mainMenu {
+    
+    var userChoices : [String] = [
+        "Answer Survey",
+//        "Change Username",
+//        "Change Password",
+        "View My Ratings",
+        "Edit My Ratings",
+        "Delete My Rating",
+        "View Other's Ratings",
+        "Settings",
+        "Games"
+    ]
+    
+    var userChoicesIcon : [String] = [
+        "survey",
+//        "username",
+//        "password",
+        "review",
+        "edit",
+        "deleteRating",
+        "response",
+        "settings",
+        "games"
+    ]
+    
+    var surveyChoices : [String] = [
+        "Rooms",
+        "Amenities",
+        "Food",
+        "Overall Feedback"
+    ]
+    
+    var surveyChoicesIcon : [String] = [
+        "room",
+        "amenities",
+        "food",
+        "feedback"
     ]
     
 }

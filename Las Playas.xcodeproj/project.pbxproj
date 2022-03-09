@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A9398E627D9472D0074F63B /* CentralMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9398E527D9472D0074F63B /* CentralMenu.swift */; };
+		9A93990B27D955F80074F63B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93990927D955F80074F63B /* HomeCollectionViewCell.swift */; };
+		9A93990C27D955F80074F63B /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A93990A27D955F80074F63B /* HomeCollectionViewCell.xib */; };
+		9A93990D27D959E80074F63B /* CentralMenu_Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5627D7A0A8002001B9 /* CentralMenu_Back.swift */; };
+		9A93991627D95CDE0074F63B /* SurveyOptionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93991427D95CDE0074F63B /* SurveyOptionsCollectionViewCell.swift */; };
+		9A93991727D95CDE0074F63B /* SurveyOptionsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A93991527D95CDE0074F63B /* SurveyOptionsCollectionViewCell.xib */; };
+		9A93991D27D966390074F63B /* SurveyOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93991C27D966390074F63B /* SurveyOptions.swift */; };
 		9AFFF77227D7F6410011B3E6 /* FoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */; };
 		9AFFF77327D7F6410011B3E6 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */; };
 		9AFFF77527D7F66F0011B3E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77427D7F66F0011B3E6 /* Constants.swift */; };
@@ -18,7 +25,6 @@
 		C236A5AC27CD789600FE3B4D /* Las_Playas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C236A5AA27CD789600FE3B4D /* Las_Playas.xcdatamodeld */; };
 		C236A5AE27CD789700FE3B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C236A5AD27CD789700FE3B4D /* Assets.xcassets */; };
 		C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C236A5AF27CD789700FE3B4D /* LaunchScreen.storyboard */; };
-		C2746F5727D7A0A8002001B9 /* CentralMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5627D7A0A8002001B9 /* CentralMenu.swift */; };
 		C2746F5927D7E967002001B9 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5827D7E967002001B9 /* Room.swift */; };
 		C2746F5D27D7EBE2002001B9 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5C27D7EBE2002001B9 /* Food.swift */; };
 		C2746F6027D7EBFB002001B9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5F27D7EBFB002001B9 /* Settings.swift */; };
@@ -35,6 +41,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A9398E527D9472D0074F63B /* CentralMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMenu.swift; sourceTree = "<group>"; };
+		9A93990927D955F80074F63B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A93990A27D955F80074F63B /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A93991427D95CDE0074F63B /* SurveyOptionsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyOptionsCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A93991527D95CDE0074F63B /* SurveyOptionsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyOptionsCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A93991C27D966390074F63B /* SurveyOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyOptions.swift; sourceTree = "<group>"; };
 		9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodTableViewCell.xib; sourceTree = "<group>"; };
 		9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		9AFFF77427D7F66F0011B3E6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -48,7 +60,7 @@
 		C236A5AD27CD789700FE3B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C236A5B027CD789700FE3B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C236A5B227CD789700FE3B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2746F5627D7A0A8002001B9 /* CentralMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMenu.swift; sourceTree = "<group>"; };
+		C2746F5627D7A0A8002001B9 /* CentralMenu_Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMenu_Back.swift; sourceTree = "<group>"; };
 		C2746F5827D7E967002001B9 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		C2746F5C27D7EBE2002001B9 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		C2746F5F27D7EBFB002001B9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -75,6 +87,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A93991127D95C6A0074F63B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A93991C27D966390074F63B /* SurveyOptions.swift */,
+				C236A5A527CD789600FE3B4D /* ViewController.swift */,
+				C291A63027D77B2000687C63 /* RegScreen.swift */,
+				9A9398E527D9472D0074F63B /* CentralMenu.swift */,
+				C2746F5827D7E967002001B9 /* Room.swift */,
+				C2746F6327D7EC17002001B9 /* Game.swift */,
+				C2746F6127D7EC0B002001B9 /* Feedback.swift */,
+				C2746F5F27D7EBFB002001B9 /* Settings.swift */,
+				C2FD85CC27D90A4A00DDDDBD /* Gym.swift */,
+				C2746F5C27D7EBE2002001B9 /* Food.swift */,
+				C29DC54227D923FE005D6F1E /* SIScreen.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9A93991227D95C810074F63B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */,
+				C236A5A727CD789600FE3B4D /* Main.storyboard */,
+				9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */,
+				9A93990927D955F80074F63B /* HomeCollectionViewCell.swift */,
+				9A93990A27D955F80074F63B /* HomeCollectionViewCell.xib */,
+				9A93991427D95CDE0074F63B /* SurveyOptionsCollectionViewCell.swift */,
+				9A93991527D95CDE0074F63B /* SurveyOptionsCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A93991327D95C9F0074F63B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AFFF77627D7F74F0011B3E6 /* UserData.swift */,
+				9AFFF77427D7F66F0011B3E6 /* Constants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C236A59527CD789600FE3B4D = {
 			isa = PBXGroup;
 			children = (
@@ -97,29 +150,18 @@
 		C236A5A027CD789600FE3B4D /* Las Playas */ = {
 			isa = PBXGroup;
 			children = (
-				9AFFF77627D7F74F0011B3E6 /* UserData.swift */,
-				9AFFF77427D7F66F0011B3E6 /* Constants.swift */,
-				9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */,
-				9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */,
 				C236A5A127CD789600FE3B4D /* AppDelegate.swift */,
 				C236A5A327CD789600FE3B4D /* SceneDelegate.swift */,
-				C236A5A527CD789600FE3B4D /* ViewController.swift */,
-				C236A5A727CD789600FE3B4D /* Main.storyboard */,
+				9A93991327D95C9F0074F63B /* Models */,
+				9A93991227D95C810074F63B /* Views */,
+				9A93991127D95C6A0074F63B /* Controllers */,
 				C236A5AD27CD789700FE3B4D /* Assets.xcassets */,
 				C236A5AF27CD789700FE3B4D /* LaunchScreen.storyboard */,
 				C236A5B227CD789700FE3B4D /* Info.plist */,
 				C236A5AA27CD789600FE3B4D /* Las_Playas.xcdatamodeld */,
-				C291A63027D77B2000687C63 /* RegScreen.swift */,
-				C2746F5627D7A0A8002001B9 /* CentralMenu.swift */,
-				C2746F5827D7E967002001B9 /* Room.swift */,
-				C2746F6327D7EC17002001B9 /* Game.swift */,
-				C2746F6127D7EC0B002001B9 /* Feedback.swift */,
-				C2746F5F27D7EBFB002001B9 /* Settings.swift */,
-				C2FD85CC27D90A4A00DDDDBD /* Gym.swift */,
-				C2746F5C27D7EBE2002001B9 /* Food.swift */,
+				C2746F5627D7A0A8002001B9 /* CentralMenu_Back.swift */,
 				C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */,
 				C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */,
-				C29DC54227D923FE005D6F1E /* SIScreen.swift */,
 			);
 			path = "Las Playas";
 			sourceTree = "<group>";
@@ -186,6 +228,8 @@
 				C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */,
 				9AFFF77227D7F6410011B3E6 /* FoodTableViewCell.xib in Resources */,
 				C236A5AE27CD789700FE3B4D /* Assets.xcassets in Resources */,
+				9A93990C27D955F80074F63B /* HomeCollectionViewCell.xib in Resources */,
+				9A93991727D95CDE0074F63B /* SurveyOptionsCollectionViewCell.xib in Resources */,
 				C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */,
 				C236A5A927CD789600FE3B4D /* Main.storyboard in Resources */,
 			);
@@ -200,8 +244,11 @@
 			files = (
 				9AFFF77527D7F66F0011B3E6 /* Constants.swift in Sources */,
 				C2746F6427D7EC17002001B9 /* Game.swift in Sources */,
+				9A9398E627D9472D0074F63B /* CentralMenu.swift in Sources */,
+				9A93990D27D959E80074F63B /* CentralMenu_Back.swift in Sources */,
 				C291A63127D77B2000687C63 /* RegScreen.swift in Sources */,
 				C2746F6027D7EBFB002001B9 /* Settings.swift in Sources */,
+				9A93991D27D966390074F63B /* SurveyOptions.swift in Sources */,
 				C291A62B27D76C7000687C63 /* DBD+CoreDataProperties.swift in Sources */,
 				C236A5AC27CD789600FE3B4D /* Las_Playas.xcdatamodeld in Sources */,
 				C236A5A627CD789600FE3B4D /* ViewController.swift in Sources */,
@@ -211,11 +258,12 @@
 				C291A62A27D76C7000687C63 /* DBD+CoreDataClass.swift in Sources */,
 				C236A5A227CD789600FE3B4D /* AppDelegate.swift in Sources */,
 				9AFFF77727D7F74F0011B3E6 /* UserData.swift in Sources */,
+				9A93990B27D955F80074F63B /* HomeCollectionViewCell.swift in Sources */,
 				C236A5A427CD789600FE3B4D /* SceneDelegate.swift in Sources */,
 				C29DC54327D923FE005D6F1E /* SIScreen.swift in Sources */,
-				C2746F5727D7A0A8002001B9 /* CentralMenu.swift in Sources */,
 				9AFFF77327D7F6410011B3E6 /* FoodTableViewCell.swift in Sources */,
 				C2746F6227D7EC0B002001B9 /* Feedback.swift in Sources */,
+				9A93991627D95CDE0074F63B /* SurveyOptionsCollectionViewCell.swift in Sources */,
 				C291A62F27D7711300687C63 /* DBSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
