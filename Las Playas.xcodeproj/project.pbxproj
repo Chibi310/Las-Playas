@@ -22,6 +22,7 @@
 		9AFFF77327D7F6410011B3E6 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */; };
 		9AFFF77527D7F66F0011B3E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77427D7F66F0011B3E6 /* Constants.swift */; };
 		9AFFF77727D7F74F0011B3E6 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFFF77627D7F74F0011B3E6 /* UserData.swift */; };
+		C208244A27DA5C51003920E4 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = C208244927DA5C51003920E4 /* AppIcon.appiconset */; };
 		C236A5A227CD789600FE3B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236A5A127CD789600FE3B4D /* AppDelegate.swift */; };
 		C236A5A427CD789600FE3B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236A5A327CD789600FE3B4D /* SceneDelegate.swift */; };
 		C236A5A627CD789600FE3B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236A5A527CD789600FE3B4D /* ViewController.swift */; };
@@ -65,6 +66,7 @@
 		9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		9AFFF77427D7F66F0011B3E6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9AFFF77627D7F74F0011B3E6 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C208244927DA5C51003920E4 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		C236A59E27CD789600FE3B4D /* Las Playas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Las Playas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C236A5A127CD789600FE3B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C236A5A327CD789600FE3B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		C236A5A027CD789600FE3B4D /* Las Playas */ = {
 			isa = PBXGroup;
 			children = (
+				C208244927DA5C51003920E4 /* AppIcon.appiconset */,
 				C236A5A127CD789600FE3B4D /* AppDelegate.swift */,
 				C236A5A327CD789600FE3B4D /* SceneDelegate.swift */,
 				9A93991327D95C9F0074F63B /* Models */,
@@ -264,6 +267,7 @@
 				9A825BD127DA1CBD00411BE4 /* EditFoodTableViewCell.xib in Resources */,
 				9A93991727D95CDE0074F63B /* SurveyOptionsCollectionViewCell.xib in Resources */,
 				C238490927DA0C8A007B95E6 /* constructionText.png in Resources */,
+				C208244A27DA5C51003920E4 /* AppIcon.appiconset in Resources */,
 				C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */,
 				C236A5A927CD789600FE3B4D /* Main.storyboard in Resources */,
 			);
