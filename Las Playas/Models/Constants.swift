@@ -81,14 +81,14 @@ struct mainMenu {
     
     var surveyChoices : [String] = [
         "Rooms",
-        "Amenities",
+        "Gym",
         "Food",
         "Overall Feedback"
     ]
     
     var surveyChoicesIcon : [String] = [
         "room",
-        "amenities",
+        "gym",
         "food",
         "feedback"
     ]

@@ -30,7 +30,7 @@ class CentralMenu: UIViewController {
 
     @IBAction func logoutPressed(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
         UserData.userInfo = ""
         UserData.tallyScore = [:]
         let WC = storyboard?.instantiateViewController(identifier: "Welcome") as! ViewController;
