@@ -104,9 +104,11 @@ class EditFood: UIViewController {
 
     @IBAction func backToSurveyPressed(_ sender: UIButton) {
         
+        
         UserData.userScoreTracker = [:]
-        let efvc = storyboard?.instantiateViewController(withIdentifier: "Edit_Survey") as! EditRatingsViewController
-        present(efvc, animated: true, completion: nil)
+        self.dismiss(animated:true, completion: nil);
+        //let efvc = storyboard?.instantiateViewController(withIdentifier: "Edit_Survey") as! EditRatingsViewController
+        //present(efvc, animated: true, completion: nil)
         
     }
     

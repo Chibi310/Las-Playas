@@ -279,21 +279,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings Test Labe;l" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xe-BX-KXb">
-                                <rect key="frame" x="193" y="273" width="150" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOB-I2-2xU">
+                                <rect key="frame" x="-16" y="680" width="459" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseForegroundColor" red="0.85491001609999995" green="0.17642897369999999" blue="0.17648684980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.9215754867" green="0.50979322199999999" blue="0.2588395476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BackButton" destination="tfs-bL-C83" eventType="touchUpInside" id="wG4-AY-5AD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNS-gw-yDP">
+                                <rect key="frame" x="-16" y="767" width="459" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseForegroundColor" red="0.9215754867" green="0.50979322199999999" blue="0.2588395476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.85491001609999995" green="0.17642897369999999" blue="0.17648684980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Logout" destination="tfs-bL-C83" eventType="touchUpInside" id="JpG-vF-plL"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="under-construction" translatesAutoresizingMaskIntoConstraints="NO" id="pB6-pb-Fq1">
+                                <rect key="frame" x="40" y="99" width="348" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="constructionText" translatesAutoresizingMaskIntoConstraints="NO" id="24N-3q-7Kv">
+                                <rect key="frame" x="57" y="476" width="315" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="daf-8R-FW0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.9647092223" green="0.85490006210000002" blue="0.3882510066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9l-uY-zRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661.68224299065412" y="1364.5788336933047"/>
+            <point key="canvasLocation" x="660.28037383177571" y="1364.5788336933047"/>
         </scene>
         <!--Feedback-->
         <scene sceneID="Xox-tz-fne">
@@ -968,7 +995,7 @@
         <!--Room Survey View Controller-->
         <scene sceneID="tKx-ML-6AT">
             <objects>
-                <viewController storyboardIdentifier="Room_Menu" modalPresentationStyle="fullScreen" id="oTF-ti-mnE" customClass="RoomSurveyViewController" customModule="ResortFeedback_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Room_Menu" modalPresentationStyle="fullScreen" id="oTF-ti-mnE" customClass="RoomSurveyViewController" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sju-f3-EvG">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1051,10 +1078,12 @@
         <image name="2022_03_09_0i8_Kleki.png" width="1400" height="1400"/>
         <image name="angry" width="170.66667175292969" height="170.66667175292969"/>
         <image name="awesome" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="constructionText" width="210.66667175292969" height="84.666664123535156"/>
         <image name="happy" width="170.66667175292969" height="170.66667175292969"/>
         <image name="neutral" width="170.66667175292969" height="170.66667175292969"/>
         <image name="overallLogo" width="306" height="51.333332061767578"/>
         <image name="sad" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="under-construction" width="170.66667175292969" height="170.66667175292969"/>
         <namedColor name="BrandBrightRed">
             <color red="0.85490196078431369" green="0.17647058823529413" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

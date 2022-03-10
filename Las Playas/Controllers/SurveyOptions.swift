@@ -30,9 +30,9 @@ class SurveyOptions: UIViewController {
     
     @IBAction func backButtonToHome(_ sender: UIButton) {
         
-        //self.dismiss(animated: true, completion: nil)
-        let WC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
-        present(WC, animated: true);
+        self.dismiss(animated: true, completion: nil)
+        //let WC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
+        //present(WC, animated: true);
         
     }
 
@@ -87,7 +87,7 @@ extension SurveyOptions: UICollectionViewDelegate {
                 let FBC = storyboard?.instantiateViewController(identifier: "Overall_Feedback") as! Feedback;
                 present(FBC, animated: true);
             default:
-                let FC = storyboard?.instantiateViewController(identifier: "Room_Menu") as! Room;
+                let FC = storyboard?.instantiateViewController(identifier: "Settings_Menu") as! Settings;
                 present(FC, animated: true);
                 //print("Under Construction")
                 //performSegue(withIdentifier: r.constructionSegue, sender: self)

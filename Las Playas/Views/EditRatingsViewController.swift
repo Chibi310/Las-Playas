@@ -28,8 +28,9 @@ class EditRatingsViewController: UIViewController {
     
     @IBAction func backButtonToSurveyPressed(_ sender: UIButton) {
         
-        let esvc = storyboard?.instantiateViewController(withIdentifier: "Main_Menu") as! CentralMenu
-        present(esvc, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
+        //let esvc = storyboard?.instantiateViewController(withIdentifier: "Main_Menu") as! CentralMenu
+        //present(esvc, animated: true, completion: nil)
         
     }
     
@@ -69,7 +70,7 @@ extension EditRatingsViewController: UICollectionViewDelegate {
                 let svc = storyboard?.instantiateViewController(withIdentifier: "Edit_Food_Survey") as! EditFood
                 present(svc, animated: true, completion: nil)
             default:
-                let svc = storyboard?.instantiateViewController(withIdentifier: "Room_Menu") as! Room
+                let svc = storyboard?.instantiateViewController(withIdentifier: "Settings_Menu") as! Settings
                 present(svc, animated: true, completion: nil)
             
         }

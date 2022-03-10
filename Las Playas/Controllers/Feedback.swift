@@ -70,9 +70,9 @@ class Feedback: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func backFeedback(_ sender: UIButton) {
-        //self.dismiss(animated: true, completion: nil);
-        let fbvc = storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
-        present(fbvc, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil);
+        //let fbvc = storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
+        //present(fbvc, animated: true, completion: nil)
     
     }
     

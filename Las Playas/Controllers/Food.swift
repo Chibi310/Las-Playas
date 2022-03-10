@@ -204,7 +204,9 @@ extension Food: UITableViewDelegate {
     
     @IBAction func goback()
     {
-        let fvc = self.storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
-        self.present(fvc, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil);
+        
+        //let fvc = self.storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
+        //self.present(fvc, animated: true, completion: nil)
     }
 }

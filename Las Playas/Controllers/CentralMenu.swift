@@ -120,7 +120,7 @@ extension CentralMenu: UICollectionViewDelegate {
                 //showAlertDialog(dtype: "Confirm", msg: "This action can't be undone. Do you still want to proceed?", style: "alert", controller: "1")
             
             default:
-                let FC = storyboard?.instantiateViewController(identifier: "Room_Menu") as! Room;
+                let FC = storyboard?.instantiateViewController(identifier: "Settings_Menu") as! Settings;
                 present(FC, animated: true);
                 //print("Under Construction")
                 //performSegue(withIdentifier: r.constructionSegue, sender: self)
