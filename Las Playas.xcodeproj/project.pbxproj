@@ -25,6 +25,12 @@
 		C236A5AC27CD789600FE3B4D /* Las_Playas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C236A5AA27CD789600FE3B4D /* Las_Playas.xcdatamodeld */; };
 		C236A5AE27CD789700FE3B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C236A5AD27CD789700FE3B4D /* Assets.xcassets */; };
 		C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C236A5AF27CD789700FE3B4D /* LaunchScreen.storyboard */; };
+		C238490127DA0B0B007B95E6 /* GymTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C238490027DA0B0B007B95E6 /* GymTableViewCell.xib */; };
+		C238490327DA0B24007B95E6 /* GymTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C238490227DA0B24007B95E6 /* GymTableViewCell.swift */; };
+		C238490527DA0B30007B95E6 /* GymConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C238490427DA0B30007B95E6 /* GymConstants.swift */; };
+		C238490727DA0B45007B95E6 /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = C238490627DA0B45007B95E6 /* Gym.swift */; };
+		C238490927DA0C8A007B95E6 /* constructionText.png in Resources */ = {isa = PBXBuildFile; fileRef = C238490827DA0C8A007B95E6 /* constructionText.png */; };
+		C238490B27DA0C94007B95E6 /* under-construction.png in Resources */ = {isa = PBXBuildFile; fileRef = C238490A27DA0C94007B95E6 /* under-construction.png */; };
 		C2746F5927D7E967002001B9 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5827D7E967002001B9 /* Room.swift */; };
 		C2746F5D27D7EBE2002001B9 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5C27D7EBE2002001B9 /* Food.swift */; };
 		C2746F6027D7EBFB002001B9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2746F5F27D7EBFB002001B9 /* Settings.swift */; };
@@ -37,7 +43,6 @@
 		C29DC54127D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png in Resources */ = {isa = PBXBuildFile; fileRef = C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */; };
 		C29DC54327D923FE005D6F1E /* SIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29DC54227D923FE005D6F1E /* SIScreen.swift */; };
 		C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */; };
-		C2FD85CD27D90A4A00DDDDBD /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FD85CC27D90A4A00DDDDBD /* Gym.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,12 @@
 		C236A5AD27CD789700FE3B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C236A5B027CD789700FE3B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C236A5B227CD789700FE3B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C238490027DA0B0B007B95E6 /* GymTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GymTableViewCell.xib; sourceTree = "<group>"; };
+		C238490227DA0B24007B95E6 /* GymTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymTableViewCell.swift; sourceTree = "<group>"; };
+		C238490427DA0B30007B95E6 /* GymConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GymConstants.swift; sourceTree = "<group>"; };
+		C238490627DA0B45007B95E6 /* Gym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
+		C238490827DA0C8A007B95E6 /* constructionText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = constructionText.png; sourceTree = "<group>"; };
+		C238490A27DA0C94007B95E6 /* under-construction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "under-construction.png"; sourceTree = "<group>"; };
 		C2746F5627D7A0A8002001B9 /* CentralMenu_Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralMenu_Back.swift; sourceTree = "<group>"; };
 		C2746F5827D7E967002001B9 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		C2746F5C27D7EBE2002001B9 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -73,7 +84,6 @@
 		C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2022_03_09_0i8_Kleki.png; sourceTree = "<group>"; };
 		C29DC54227D923FE005D6F1E /* SIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIScreen.swift; sourceTree = "<group>"; };
 		C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resort_Logo.png; sourceTree = "<group>"; };
-		C2FD85CC27D90A4A00DDDDBD /* Gym.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +106,12 @@
 				9A9398E527D9472D0074F63B /* CentralMenu.swift */,
 				C2746F5827D7E967002001B9 /* Room.swift */,
 				C2746F6327D7EC17002001B9 /* Game.swift */,
+				C238490627DA0B45007B95E6 /* Gym.swift */,
 				C2746F6127D7EC0B002001B9 /* Feedback.swift */,
 				C2746F5F27D7EBFB002001B9 /* Settings.swift */,
-				C2FD85CC27D90A4A00DDDDBD /* Gym.swift */,
 				C2746F5C27D7EBE2002001B9 /* Food.swift */,
 				C29DC54227D923FE005D6F1E /* SIScreen.swift */,
+				C238490227DA0B24007B95E6 /* GymTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 				9AFFF77127D7F6410011B3E6 /* FoodTableViewCell.swift */,
 				C236A5A727CD789600FE3B4D /* Main.storyboard */,
 				9AFFF77027D7F6410011B3E6 /* FoodTableViewCell.xib */,
+				C238490027DA0B0B007B95E6 /* GymTableViewCell.xib */,
 				9A93990927D955F80074F63B /* HomeCollectionViewCell.swift */,
 				9A93990A27D955F80074F63B /* HomeCollectionViewCell.xib */,
 				9A93991427D95CDE0074F63B /* SurveyOptionsCollectionViewCell.swift */,
@@ -123,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				9AFFF77627D7F74F0011B3E6 /* UserData.swift */,
+				C238490427DA0B30007B95E6 /* GymConstants.swift */,
 				9AFFF77427D7F66F0011B3E6 /* Constants.swift */,
 			);
 			path = Models;
@@ -162,6 +175,8 @@
 				C2746F5627D7A0A8002001B9 /* CentralMenu_Back.swift */,
 				C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */,
 				C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */,
+				C238490827DA0C8A007B95E6 /* constructionText.png */,
+				C238490A27DA0C94007B95E6 /* under-construction.png */,
 			);
 			path = "Las Playas";
 			sourceTree = "<group>";
@@ -228,8 +243,11 @@
 				C236A5B127CD789700FE3B4D /* LaunchScreen.storyboard in Resources */,
 				9AFFF77227D7F6410011B3E6 /* FoodTableViewCell.xib in Resources */,
 				C236A5AE27CD789700FE3B4D /* Assets.xcassets in Resources */,
+				C238490B27DA0C94007B95E6 /* under-construction.png in Resources */,
 				9A93990C27D955F80074F63B /* HomeCollectionViewCell.xib in Resources */,
+				C238490127DA0B0B007B95E6 /* GymTableViewCell.xib in Resources */,
 				9A93991727D95CDE0074F63B /* SurveyOptionsCollectionViewCell.xib in Resources */,
+				C238490927DA0C8A007B95E6 /* constructionText.png in Resources */,
 				C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */,
 				C236A5A927CD789600FE3B4D /* Main.storyboard in Resources */,
 			);
@@ -252,18 +270,20 @@
 				C291A62B27D76C7000687C63 /* DBD+CoreDataProperties.swift in Sources */,
 				C236A5AC27CD789600FE3B4D /* Las_Playas.xcdatamodeld in Sources */,
 				C236A5A627CD789600FE3B4D /* ViewController.swift in Sources */,
-				C2FD85CD27D90A4A00DDDDBD /* Gym.swift in Sources */,
 				C2746F5D27D7EBE2002001B9 /* Food.swift in Sources */,
 				C2746F5927D7E967002001B9 /* Room.swift in Sources */,
 				C291A62A27D76C7000687C63 /* DBD+CoreDataClass.swift in Sources */,
 				C236A5A227CD789600FE3B4D /* AppDelegate.swift in Sources */,
 				9AFFF77727D7F74F0011B3E6 /* UserData.swift in Sources */,
 				9A93990B27D955F80074F63B /* HomeCollectionViewCell.swift in Sources */,
+				C238490327DA0B24007B95E6 /* GymTableViewCell.swift in Sources */,
 				C236A5A427CD789600FE3B4D /* SceneDelegate.swift in Sources */,
 				C29DC54327D923FE005D6F1E /* SIScreen.swift in Sources */,
 				9AFFF77327D7F6410011B3E6 /* FoodTableViewCell.swift in Sources */,
+				C238490527DA0B30007B95E6 /* GymConstants.swift in Sources */,
 				C2746F6227D7EC0B002001B9 /* Feedback.swift in Sources */,
 				9A93991627D95CDE0074F63B /* SurveyOptionsCollectionViewCell.swift in Sources */,
+				C238490727DA0B45007B95E6 /* Gym.swift in Sources */,
 				C291A62F27D7711300687C63 /* DBSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

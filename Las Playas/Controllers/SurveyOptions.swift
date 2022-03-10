@@ -30,9 +30,9 @@ class SurveyOptions: UIViewController {
     
     @IBAction func backButtonToHome(_ sender: UIButton) {
         
-        //self.dismiss(animated: true, completion: nil)
-        let WC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
-        present(WC, animated: true);
+        self.dismiss(animated: true, completion: nil)
+        //let WC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
+        //present(WC, animated: true);
         
     }
 
@@ -68,12 +68,16 @@ extension SurveyOptions: UICollectionViewDelegate {
         
         switch indexPath.item {
             case 0:
-                print("Time To Answer Room Survey")
+                let FC = storyboard?.instantiateViewController(identifier: "Room_Menu") as! Room;
+                present(FC, animated: true);
+                //print("Time To Answer Room Survey")
 //                performSegue(withIdentifier: r.surveySegue, sender: self)
 //                let RC = storyboard?.instantiateViewController(identifier: "Main_Survey_Menu") as! SurveyOptions;
 //                present(RC, animated: true);
             case 1:
-                print("Time To Answer Gym Survey")
+                let FC = storyboard?.instantiateViewController(identifier: "Gym_Menu") as! Gym;
+                present(FC, animated: true);
+                //print("Time To Answer Gym Survey")
                 //performSegue(withIdentifier: r.hometoDelete, sender: self)
                 //showAlertDialog(dtype: "Confirm", msg: "This action can't be undone. Do you still want to proceed?", style: "alert", controller: "1")
             case 2:
@@ -83,7 +87,9 @@ extension SurveyOptions: UICollectionViewDelegate {
                 let FBC = storyboard?.instantiateViewController(identifier: "Overall_Feedback") as! Feedback;
                 present(FBC, animated: true);
             default:
-                print("Under Construction")
+                let FC = storyboard?.instantiateViewController(identifier: "Room_Menu") as! Room;
+                present(FC, animated: true);
+                //print("Under Construction")
                 //performSegue(withIdentifier: r.constructionSegue, sender: self)
         }
         

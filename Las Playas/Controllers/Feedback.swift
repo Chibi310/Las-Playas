@@ -50,6 +50,7 @@ class Feedback: UIViewController, UITextViewDelegate {
         
         let toSubmit : [String : Any] = ["Feedback" : feedbackTextView.text!, "Score" : fbScore]
         print(toSubmit.description)
+        self.dismiss(animated: true, completion: nil);
         
 //        let isSuccess = DBManager.inst.submitFeedback(u: UserData.userInfo, f: feedbackTextView.text!)
 //
@@ -69,9 +70,9 @@ class Feedback: UIViewController, UITextViewDelegate {
     }
     
     @IBAction func backFeedback(_ sender: UIButton) {
-        
-        let fbvc = storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
-        present(fbvc, animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil);
+        //let fbvc = storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
+        //present(fbvc, animated: true, completion: nil)
     
     }
     

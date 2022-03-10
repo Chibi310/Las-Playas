@@ -15,7 +15,18 @@ class Room: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func BackButton()
+    {
+        self.dismiss(animated: true, completion: nil);
+    }
 
+    @IBAction func Logout()
+    {
+        UserData.userInfo = ""
+        UserData.tallyScore = [:]
+        let WC = storyboard?.instantiateViewController(identifier: "Welcome") as! ViewController;
+        present(WC, animated: true);
+    }
     /*
     // MARK: - Navigation
 

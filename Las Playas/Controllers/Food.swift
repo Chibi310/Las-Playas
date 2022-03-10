@@ -35,6 +35,7 @@ class Food: UIViewController {
         }
         
         print(tallyArray)
+        self.dismiss(animated: true, completion: nil);
         
 //        let isSuccess = DBManager.inst.addUserFoodTally(u: UserData.userInfo, t: UserData.tallyScore.description)
 //
