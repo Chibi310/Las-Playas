@@ -50,29 +50,29 @@ class Feedback: UIViewController, UITextViewDelegate {
         
         let toSubmit : [String : Any] = ["Feedback" : feedbackTextView.text!, "Score" : fbScore]
         print(toSubmit.description)
-        self.dismiss(animated: true, completion: nil);
+        //self.dismiss(animated: true, completion: nil);
         
-//        let isSuccess = DBManager.inst.submitFeedback(u: UserData.userInfo, f: feedbackTextView.text!)
-//
-//        if isSuccess == true {
-//
-//            showAlertDialog(dtype: "Alert", msg: "Feedback Successfully Saved! Redirecting You Back To Survey Home Page", style: "alert", controller : r.backToFeedbackHome)
-//
-//            //print("Under Construction!")
-//
-//        } else {
-//
-//            showAlertDialog(dtype: "Alert", msg: "Feedback Not Successfully Saved.", style: "alert", controller: "")
-//
-//          }
+        let isSuccess = DBSource.instance.addUserOverallFeedback(u: UserData.userInfo, f: toSubmit.description)
+
+        if isSuccess == true {
+
+            showAlertDialog(dtype: "Alert", msg: "Feedback Successfully Saved! Redirecting You Back To Survey Home Page", style: "alert", controller : r.backToFeedbackHome)
+
+            //print("Under Construction!")
+
+        } else {
+
+            showAlertDialog(dtype: "Alert", msg: "Feedback Not Successfully Saved.", style: "alert", controller: "")
+
+          }
         
         
     }
     
     @IBAction func backFeedback(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil);
-        //let fbvc = storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
-        //present(fbvc, animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil);
+        let fbvc = storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
+        present(fbvc, animated: true, completion: nil)
     
     }
     
@@ -87,7 +87,9 @@ class Feedback: UIViewController, UITextViewDelegate {
                 //ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in})
                 ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
                     if controller != "" {
-                        self.goToNextController(segueId: controller)
+                        //self.goToNextController(segueId: controller)
+                        let fbvc = self.storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
+                        self.present(fbvc, animated: true, completion: nil)
                     }
                 })
                 dialogMessage.addAction(ok)

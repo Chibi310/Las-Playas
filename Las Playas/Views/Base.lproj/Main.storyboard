@@ -71,7 +71,7 @@
                                 <rect key="frame" x="49" y="263" width="331" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-JP-bx7">
                                 <rect key="frame" x="27" y="434" width="190" height="70"/>
@@ -89,7 +89,7 @@
                                 <rect key="frame" x="49" y="341" width="331" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="new-password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfC-tf-BfQ">
                                 <rect key="frame" x="225" y="434" width="190" height="70"/>
@@ -515,7 +515,7 @@
         <!--Room-->
         <scene sceneID="9w6-Hl-Nvv">
             <objects>
-                <viewController storyboardIdentifier="Room_Menu" id="yaC-AX-gdT" customClass="Room" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Room_Menu" modalPresentationStyle="fullScreen" id="yaC-AX-gdT" customClass="Room" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WpT-mV-Z7B">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -575,13 +575,13 @@
                                 <rect key="frame" x="49" y="263" width="331" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4t0-WB-NlK">
                                 <rect key="frame" x="49" y="341" width="331" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbG-NM-Ebf">
                                 <rect key="frame" x="225" y="434" width="190" height="70"/>
@@ -857,6 +857,164 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmU-nK-oAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4172" y="-342"/>
+        </scene>
+        <!--Edit Ratings View Controller-->
+        <scene sceneID="Kcq-1l-iR2">
+            <objects>
+                <viewController storyboardIdentifier="Edit_Survey" modalPresentationStyle="fullScreen" id="1P7-nS-kSw" customClass="EditRatingsViewController" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NPf-Kd-XZi">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P0R-Km-eGi">
+                                <rect key="frame" x="0.0" y="171" width="428" height="585"/>
+                                <color key="backgroundColor" name="BrandOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="585" id="CNL-aI-8WR"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ie0-bO-A4o">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EditSurveyChoiceCell" id="BzV-Dq-gWf">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zgx-pp-Nl7">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-1x-u8A">
+                                <rect key="frame" x="0.0" y="780" width="428" height="60"/>
+                                <color key="backgroundColor" name="BrandYellow"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zBQ-Nb-nCQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="BrandBrightRed"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonToSurveyPressed:" destination="1P7-nS-kSw" eventType="touchUpInside" id="Wen-8n-i4N"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJd-L6-tRw">
+                                <rect key="frame" x="0.0" y="78" width="428" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="il2-W9-3rd"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4j8-g4-Ncu"/>
+                        <color key="backgroundColor" name="BrandOrange"/>
+                        <constraints>
+                            <constraint firstItem="xfd-1x-u8A" firstAttribute="leading" secondItem="4j8-g4-Ncu" secondAttribute="leading" id="DhI-CY-J5H"/>
+                            <constraint firstItem="vJd-L6-tRw" firstAttribute="leading" secondItem="4j8-g4-Ncu" secondAttribute="leading" id="M8M-St-9AW"/>
+                            <constraint firstItem="P0R-Km-eGi" firstAttribute="leading" secondItem="4j8-g4-Ncu" secondAttribute="leading" id="Oyd-KQ-273"/>
+                            <constraint firstItem="xfd-1x-u8A" firstAttribute="top" secondItem="P0R-Km-eGi" secondAttribute="bottom" constant="24" id="Tnu-mZ-XmD"/>
+                            <constraint firstItem="xfd-1x-u8A" firstAttribute="trailing" secondItem="4j8-g4-Ncu" secondAttribute="trailing" id="Trd-N5-8EE"/>
+                            <constraint firstItem="P0R-Km-eGi" firstAttribute="trailing" secondItem="4j8-g4-Ncu" secondAttribute="trailing" id="VoQ-Tl-6Uj"/>
+                            <constraint firstItem="vJd-L6-tRw" firstAttribute="top" secondItem="4j8-g4-Ncu" secondAttribute="top" constant="34" id="bC5-yE-gh1"/>
+                            <constraint firstItem="P0R-Km-eGi" firstAttribute="top" secondItem="vJd-L6-tRw" secondAttribute="bottom" constant="8" symbolic="YES" id="vqR-am-Qq7"/>
+                            <constraint firstItem="vJd-L6-tRw" firstAttribute="trailing" secondItem="4j8-g4-Ncu" secondAttribute="trailing" id="vsi-FO-TtF"/>
+                            <constraint firstItem="P0R-Km-eGi" firstAttribute="top" secondItem="4j8-g4-Ncu" secondAttribute="top" constant="127" id="w1t-FR-lgX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editSurveyCollectionView" destination="P0R-Km-eGi" id="2Eq-QE-JNe"/>
+                        <outlet property="editSurveyIntroTextView" destination="vJd-L6-tRw" id="bO6-je-3pk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3X-MV-DXJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3049" y="2276"/>
+        </scene>
+        <!--Edit Food-->
+        <scene sceneID="shi-Fw-7KI">
+            <objects>
+                <viewController storyboardIdentifier="Edit_Food_Survey" modalPresentationStyle="fullScreen" id="eMv-ho-4oN" customClass="EditFood" customModule="Las_Playas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MGt-d6-eLc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Oeg-dk-iQc">
+                                <rect key="frame" x="0.0" y="70" width="428" height="585"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="585" id="uZ4-b0-Dop"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EditFoodViewCell" rowHeight="125" id="g4H-NL-061">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g4H-NL-061" id="xb8-TA-Y29">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYe-ES-J5u">
+                                <rect key="frame" x="0.0" y="743" width="428" height="60"/>
+                                <color key="backgroundColor" name="BrandOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8CM-dQ-jYB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" name="BrandBrightRed"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToSurveyPressed:" destination="eMv-ho-4oN" eventType="touchUpInside" id="pPN-dG-a5P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMy-4Q-GQn">
+                                <rect key="frame" x="0.0" y="675" width="428" height="60"/>
+                                <color key="backgroundColor" name="BrandBrightRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2lo-vt-fPg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" name="BrandOrange"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitEditFoodResponse:" destination="eMv-ho-4oN" eventType="touchUpInside" id="cu8-na-lgj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hD3-lA-1hs"/>
+                        <color key="backgroundColor" name="BrandDarkRed"/>
+                        <constraints>
+                            <constraint firstItem="IYe-ES-J5u" firstAttribute="top" secondItem="tMy-4Q-GQn" secondAttribute="bottom" constant="8" id="9ld-fo-hEK"/>
+                            <constraint firstItem="IYe-ES-J5u" firstAttribute="leading" secondItem="hD3-lA-1hs" secondAttribute="leading" id="IuD-el-hFG"/>
+                            <constraint firstItem="tMy-4Q-GQn" firstAttribute="trailing" secondItem="hD3-lA-1hs" secondAttribute="trailing" id="QGl-1K-u5v"/>
+                            <constraint firstItem="Oeg-dk-iQc" firstAttribute="top" secondItem="hD3-lA-1hs" secondAttribute="top" constant="26" id="Sbk-qf-gx7"/>
+                            <constraint firstItem="tMy-4Q-GQn" firstAttribute="leading" secondItem="hD3-lA-1hs" secondAttribute="leading" id="eH0-C9-AjK"/>
+                            <constraint firstItem="tMy-4Q-GQn" firstAttribute="top" secondItem="Oeg-dk-iQc" secondAttribute="bottom" constant="20" id="jbs-d6-u4J"/>
+                            <constraint firstItem="Oeg-dk-iQc" firstAttribute="trailing" secondItem="hD3-lA-1hs" secondAttribute="trailing" id="moA-5Z-ifz"/>
+                            <constraint firstItem="Oeg-dk-iQc" firstAttribute="leading" secondItem="hD3-lA-1hs" secondAttribute="leading" id="tqa-Xr-mOh"/>
+                            <constraint firstItem="IYe-ES-J5u" firstAttribute="trailing" secondItem="hD3-lA-1hs" secondAttribute="trailing" id="x09-Lf-Tuh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="editFoodTableView" destination="Oeg-dk-iQc" id="Wwz-dg-uIg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKD-bj-HhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4172" y="2276"/>
         </scene>
     </scenes>
     <resources>

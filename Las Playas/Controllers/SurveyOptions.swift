@@ -30,9 +30,9 @@ class SurveyOptions: UIViewController {
     
     @IBAction func backButtonToHome(_ sender: UIButton) {
         
-        self.dismiss(animated: true, completion: nil)
-        //let WC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
-        //present(WC, animated: true);
+        //self.dismiss(animated: true, completion: nil)
+        let WC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
+        present(WC, animated: true);
         
     }
 

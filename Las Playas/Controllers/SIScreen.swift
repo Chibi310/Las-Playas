@@ -40,6 +40,18 @@ class SIScreen: UIViewController {
                 if(unwrapped.password == Password.text!)
                 {
                     UserData.userInfo = UserName.text!
+                    if unwrapped.q1Rating == nil {
+                        UserData.userScore = ""
+                    } else {
+                        UserData.userScore = unwrapped.q1Rating!
+                      }
+                    
+                    if unwrapped.feedback == nil {
+                        UserData.userFeedback = ""
+                    } else {
+                        UserData.userFeedback = unwrapped.feedback!
+                      }
+        
                     let RC = storyboard?.instantiateViewController(identifier: "Main_Menu") as! CentralMenu;
                     present(RC, animated: true);
                 }

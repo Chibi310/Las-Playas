@@ -1,48 +1,49 @@
 //
-//  Food.swift
+//  EditFood.swift
 //  Las Playas
 //
-//  Created by Christopher Medina on 3/8/22.
+//  Created by Maricel Sumulong on 3/10/22.
 //
 
 import UIKit
 
-class Food: UIViewController {
+class EditFood: UIViewController {
 
-    @IBOutlet weak var foodTableView: UITableView!
-    
+    @IBOutlet weak var editFoodTableView: UITableView!
     var tallyScore : [String : Int] = [:]
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        foodTableView.delegate = self
-        foodTableView.dataSource = self
-        foodTableView.register(UINib(nibName: r.foodNibName, bundle: nil), forCellReuseIdentifier: r.foodCellIdentifier)
+        editFoodTableView.delegate = self
+        editFoodTableView.dataSource = self
+        editFoodTableView.register(UINib(nibName: r.editfoodNibName, bundle: nil), forCellReuseIdentifier: r.editFoodCellIdentifier)
+        
+        
         
     }
     
-    @IBAction func submitFoodResponse(_ sender: UIButton) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let con = convertStringToDictionary(text: UserData.userScore)
+        rebuildTable(jSon : con)
+    }
+    
+    @IBAction func submitEditFoodResponse(_ sender: UIButton) {
         
         let scoreArray = [Int](repeating: 0, count: questions.foodQuestions.count)
-        var tallyArray : [String : [Int]] = ["Food": scoreArray]
+        var tallyArray = ["Food":scoreArray]
+        var finalArr : [[String : [Int]]] = []
         
-        for key in UserData.tallyScore.keys {
-            tallyArray["Food"]![Int(key)!] = UserData.tallyScore[key]!
+        for key in UserData.userScoreTracker.keys {
+            tallyArray["Food"]![Int(key)!] = UserData.userScoreTracker[key]!
             
         }
         
-        //print(tallyArray)
-        var finalArr : [[String : [Int]]] = []
         finalArr.append(tallyArray)
-//        print(finalArr.description)
-                        
-        //let dic = ["2": "B", "1": "A", "3": "C"]
-        /*
-         code from https://www.codegrepper.com/code-examples/swift/convert+array+of+dictionary+to+json+string+swift
-         */
+        
+        //print(finalArr.description)
+        
         let encoder = JSONEncoder()
         var jsonStr : String = ""
         if let jsonData = try? encoder.encode(finalArr) {
@@ -56,7 +57,8 @@ class Food: UIViewController {
 
         if isSuccess == true {
 
-            showAlertDialog(dtype: "Alert", msg: "Response Successfully Saved! Redirecting You Back To Survey Home Page", style: "alert", controller : r.backToSurveyHome)
+            UserData.userScore = jsonStr
+            showAlertDialog(dtype: "Alert", msg: "Response Successfully Saved! Redirecting You Back To Edit Survey Page", style: "alert", controller : r.backToSurveyHome)
 
             //print("Under Construction!")
 
@@ -67,6 +69,7 @@ class Food: UIViewController {
           }
         
     }
+    
     
     func showAlertDialog(dtype: String, msg: String, style: String, controller: String) {
         
@@ -80,8 +83,8 @@ class Food: UIViewController {
                 ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
                     if controller != "" {
                         //self.goToNextController(segueId: controller)
-                        let fvc = self.storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
-                        self.present(fvc, animated: true, completion: nil)
+                        let efvc = self.storyboard?.instantiateViewController(withIdentifier: "Edit_Survey") as! EditRatingsViewController
+                        self.present(efvc, animated: true, completion: nil)
                     }
                 })
                 dialogMessage.addAction(ok)
@@ -98,20 +101,44 @@ class Food: UIViewController {
         performSegue(withIdentifier: segueId, sender: nil)
         
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func backToSurveyPressed(_ sender: UIButton) {
+        
+        UserData.userScoreTracker = [:]
+        let efvc = storyboard?.instantiateViewController(withIdentifier: "Edit_Survey") as! EditRatingsViewController
+        present(efvc, animated: true, completion: nil)
+        
     }
-    */
+    
+    
+    func convertStringToDictionary(text: String) -> [Int] {
+        
+        //print("TEXT: \(text)")
+        //let t = "[{\"Food\" : [1,2,3,4,5,5,4,3,2,1]}]"
+       
+        let data = text.data(using: .utf8)!
+        do {
+            if let jsonArray = try JSONSerialization.jsonObject(with: data, options : .allowFragments) as? [Dictionary<String,Any>]
+            {
+                //print(jsonArray)// use the json here
+                return jsonArray[0]["Food"] as! [Int]
+
+            } else {
+                print("bad json")
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+        
+        return []
+       //return nil
+   }
+    
+    
 
 }
 
-extension Food: UITableViewDataSource {
+extension EditFood: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -134,7 +161,7 @@ extension Food: UITableViewDataSource {
             
             case 0:
             
-                let cell = tableView.dequeueReusableCell(withIdentifier: r.foodCellIdentifier, for: indexPath) as! FoodTableViewCell
+                let cell = tableView.dequeueReusableCell(withIdentifier: r.editFoodCellIdentifier, for: indexPath) as! EditFoodTableViewCell
                 
                 cell.question.text = questions.foodQuestions[indexPath.row]
                 let qNum = indexPath.row
@@ -152,7 +179,7 @@ extension Food: UITableViewDataSource {
                 return cell
                 
             default:
-                let defCell = tableView.dequeueReusableCell(withIdentifier: r.foodCellIdentifier, for: indexPath)
+                let defCell = tableView.dequeueReusableCell(withIdentifier: r.editFoodCellIdentifier, for: indexPath)
                 print("no default")
                 return defCell
             
@@ -168,7 +195,7 @@ extension Food: UITableViewDataSource {
     
 }
 
-extension Food: UITableViewDelegate {
+extension EditFood: UITableViewDelegate {
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
@@ -176,11 +203,11 @@ extension Food: UITableViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
     
-        if UserData.tallyScore.count != 0 {
-            for key in UserData.tallyScore.keys{
+        if UserData.userScoreTracker.count != 0 {
+            for key in UserData.userScoreTracker.keys{
                 let indexPath = IndexPath(row: Int(key)!, section: 0)
-                let cell = foodTableView.cellForRow(at: indexPath) as? FoodTableViewCell
-                let selected = UserData.tallyScore[key]
+                let cell = editFoodTableView.cellForRow(at: indexPath) as? EditFoodTableViewCell
+                let selected = UserData.userScoreTracker[key]
 
                 switch selected {
                     case 1:
@@ -201,10 +228,32 @@ extension Food: UITableViewDelegate {
         
     }
     
-    
-    @IBAction func goback()
-    {
-        let fvc = self.storyboard?.instantiateViewController(withIdentifier: "Survey_Menu") as! SurveyOptions
-        self.present(fvc, animated: true, completion: nil)
+    func rebuildTable(jSon : [Int]) {
+        
+        for key in 0...jSon.count - 1 {
+            let indexPath = IndexPath(row: key, section: 0)
+            let cell = editFoodTableView.cellForRow(at: indexPath) as? EditFoodTableViewCell
+            let selected = jSon[key]
+            UserData.userScoreTracker[String(key)] = selected
+
+            //print(indexPath)
+            switch selected {
+                
+                case 1:
+                    cell?.fRateImage1.alpha = 1
+                case 2:
+                    cell?.fRateImage2.alpha = 1
+                case 3:
+                    cell?.fRateImage3.alpha = 1
+                case 4:
+                    cell?.fRateImage4.alpha = 1
+                default:
+                    cell?.fRateImage5.alpha = 1
+            
+            }
+
+        }
+        
     }
+    
 }

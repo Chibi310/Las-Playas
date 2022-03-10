@@ -38,6 +38,26 @@ class CentralMenu: UIViewController {
         
     }
     
+    func showAlertDialog(dtype: String, msg: String, style: String) {
+        
+        var dialogMessage = UIAlertController()
+        var ok = UIAlertAction()
+        
+        switch style.lowercased() {
+            case "alert":
+                dialogMessage = UIAlertController(title: dtype, message: msg, preferredStyle: .alert)
+                //ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in})
+                ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                })
+                dialogMessage.addAction(ok)
+            default:
+                print("No alert available")
+        }
+        
+        self.present(dialogMessage, animated: true, completion: nil)
+        
+    }
+    
 }
 
 extension CentralMenu: UICollectionViewDataSource {
@@ -84,6 +104,16 @@ extension CentralMenu: UICollectionViewDelegate {
 //                performSegue(withIdentifier: r.surveySegue, sender: self)
                 let RC = storyboard?.instantiateViewController(identifier: "Survey_Menu") as! SurveyOptions
                 present(RC, animated: true);
+            case 2:
+            
+            if UserData.userScore == "" {
+                showAlertDialog(dtype: "Alert", msg: "No ratings to edit!", style: "alert")
+            } else {
+                let RC = storyboard?.instantiateViewController(identifier: "Edit_Survey") as! EditRatingsViewController
+                present(RC, animated: true);
+            }
+            
+                
             case 7:
                 print("Clears Database")
                 //performSegue(withIdentifier: r.hometoDelete, sender: self)

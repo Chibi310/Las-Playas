@@ -27,6 +27,9 @@ struct r {
     static let deleteNibName = "DeleteTableViewCell"
     static let backToFeedbackHome = "BackToFeedbackHome"
     static let feedbackSegue = "OverAllFeedback"
+    static let editSurveyCellIdentifier = "EditSurveyChoiceCell"
+    static let editFoodCellIdentifier = "EditFoodViewCell"
+    static let editfoodNibName = "EditFoodTableViewCell"
 
 }
 
@@ -81,14 +84,14 @@ struct mainMenu {
     
     var surveyChoices : [String] = [
         "Rooms",
-        "Gym",
+        "Amenities",
         "Food",
         "Overall Feedback"
     ]
     
     var surveyChoicesIcon : [String] = [
         "room",
-        "gym",
+        "amenities",
         "food",
         "feedback"
     ]
