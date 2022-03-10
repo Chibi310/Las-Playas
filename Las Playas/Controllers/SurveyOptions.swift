@@ -68,7 +68,7 @@ extension SurveyOptions: UICollectionViewDelegate {
         
         switch indexPath.item {
             case 0:
-                let FC = storyboard?.instantiateViewController(identifier: "Room_Menu") as! Room;
+                let FC = storyboard?.instantiateViewController(identifier: "Room_Menu") as! RoomSurveyViewController;
                 present(FC, animated: true);
                 //print("Time To Answer Room Survey")
 //                performSegue(withIdentifier: r.surveySegue, sender: self)

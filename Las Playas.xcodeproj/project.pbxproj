@@ -47,6 +47,7 @@
 		C29DC54127D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png in Resources */ = {isa = PBXBuildFile; fileRef = C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */; };
 		C29DC54327D923FE005D6F1E /* SIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29DC54227D923FE005D6F1E /* SIScreen.swift */; };
 		C2FD85CB27D909DF00DDDDBD /* Resort_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */; };
+		FE74DCEB27DA453000F33D69 /* RoomSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74DCEA27DA453000F33D69 /* RoomSurveyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		C29DC54027D91E2D005D6F1E /* 2022_03_09_0i8_Kleki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2022_03_09_0i8_Kleki.png; sourceTree = "<group>"; };
 		C29DC54227D923FE005D6F1E /* SIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIScreen.swift; sourceTree = "<group>"; };
 		C2FD85CA27D909DF00DDDDBD /* Resort_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resort_Logo.png; sourceTree = "<group>"; };
+		FE74DCEA27DA453000F33D69 /* RoomSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomSurveyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		9A93991127D95C6A0074F63B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FE74DCEA27DA453000F33D69 /* RoomSurveyViewController.swift */,
 				9A825BD327DA1D0000411BE4 /* EditFood.swift */,
 				9A825BCD27DA177B00411BE4 /* EditRatingsViewController.swift */,
 				9A93991C27D966390074F63B /* SurveyOptions.swift */,
@@ -292,6 +295,7 @@
 				9A825BD227DA1CBD00411BE4 /* EditFoodTableViewCell.swift in Sources */,
 				9AFFF77727D7F74F0011B3E6 /* UserData.swift in Sources */,
 				9A93990B27D955F80074F63B /* HomeCollectionViewCell.swift in Sources */,
+				FE74DCEB27DA453000F33D69 /* RoomSurveyViewController.swift in Sources */,
 				C238490327DA0B24007B95E6 /* GymTableViewCell.swift in Sources */,
 				C236A5A427CD789600FE3B4D /* SceneDelegate.swift in Sources */,
 				C29DC54327D923FE005D6F1E /* SIScreen.swift in Sources */,

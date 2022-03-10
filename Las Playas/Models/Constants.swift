@@ -6,7 +6,7 @@
 //
 
 struct r {
-    
+
     static let registerSegue = "RegisterToHome"
     static let loginSegue = "LoginToHome"
     static let cellIdentifier = "UserChoiceCell"
@@ -30,11 +30,13 @@ struct r {
     static let editSurveyCellIdentifier = "EditSurveyChoiceCell"
     static let editFoodCellIdentifier = "EditFoodViewCell"
     static let editfoodNibName = "EditFoodTableViewCell"
+    static let roomSegue = "RoomSurvey"
+    static let roomBackToSurveyHome = "RoomBackToHome"
 
 }
 
 struct questions {
-    
+
     static let foodQuestions = [
         "1. The food is served fresh and hot.",
         "2. The menu has a good variety of items.",
@@ -53,12 +55,24 @@ struct questions {
 //        "15. The food is a good value for the dollar.",
 //        "16. Prices are competitive."
     ]
-    
+    static let roomQuestions = [
+
+        "1. What was the reason for your visit?",
+        "2. Were you alone or in a group?",
+        "3. Why did you choose this hotel?",
+        "4. How did you book your stay with us?",
+        "5. Were the staff friendly and helpful?",
+        "6. Did the staff respond quickly?",
+        "7. Was your room comfortable and clean?",
+        "8. Did you eat at the hotel?",
+        "9. How would you rate the hotel food?",
+        "10. Do you think that the hotel provides value for money?",
+    ]
 }
 
 struct mainMenu {
-    
-    var userChoices : [String] = [
+
+    var userChoices: [String] = [
         "Answer Survey",
 //        "Change Username",
 //        "Change Password",
@@ -69,8 +83,8 @@ struct mainMenu {
         "Settings",
         "Games"
     ]
-    
-    var userChoicesIcon : [String] = [
+
+    var userChoicesIcon: [String] = [
         "survey",
 //        "username",
 //        "password",
@@ -81,19 +95,19 @@ struct mainMenu {
         "settings",
         "games"
     ]
-    
-    var surveyChoices : [String] = [
+
+    var surveyChoices: [String] = [
         "Rooms",
         "Amenities",
         "Food",
         "Overall Feedback"
     ]
-    
-    var surveyChoicesIcon : [String] = [
+
+    var surveyChoicesIcon: [String] = [
         "room",
         "amenities",
         "food",
         "feedback"
     ]
-    
+
 }
