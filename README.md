@@ -1,6 +1,7 @@
 # Las-Playas: A Resort Feedback Application
 
-##Project Description
+## Project Description
+
 This project is a single base application that allows the user to provide a feedback for the resort they stayed in.
 
 ## Technologies Used
