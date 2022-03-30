@@ -1,6 +1,7 @@
 # Las-Playas: A Resort Feedback Application
 
-##Project Description
+## Project Description
+
 This project is a single base application that allows the user to provide a feedback for the resort they stayed in.
 
 ## Technologies Used
@@ -16,11 +17,11 @@ List Of Futures Ready:
 * Sign Up / Log-In
 * Add Rating (Rooms, Gym and Food)
 * Add Over-All Feedback
-* Edit Ratings
 
 TO-DO Features:
 
 * View Rating
+* Edit Ratings
 * Delete Rating
 * Settings
 	* Change Username
