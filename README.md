@@ -88,13 +88,13 @@ Below are screenshots of the project in action:
 
 ## Contributors
 
-<a href="https://github.com/Chibi310" title="Christopher Medina">***Christopher Medina***</a>
+<a href="https://github.com/Chibi310" title="Click for Github Portfolio">***Christopher Medina***</a>
 
-<a href="https://github.com/scshockley03" title="Stanley Shockley">***Stanley Shockley***</a>
+<a href="https://github.com/scshockley03" title="Click for Github Portfolio">***Stanley Shockley***</a>
 
-<a href="https://github.com/PabloDeLaCruz1" title="Pablo DeLa Cruz">***Pablo DeLa Cruz***</a>
+<a href="https://github.com/PabloDeLaCruz1" title="Click for Github Portfolio">***Pablo DeLa Cruz***</a>
 
-<a href="https://github.com/azhelle16" title="Maricel Louise Sumulong">***Maricel Louise Sumulong***</a>
+<a href="https://github.com/azhelle16" title="Click for Github Portfolio">***Maricel Louise Sumulong***</a>
 
 
 
