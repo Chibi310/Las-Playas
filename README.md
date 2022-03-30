@@ -17,11 +17,11 @@ List Of Futures Ready:
 * Sign Up / Log-In
 * Add Rating (Rooms, Gym and Food)
 * Add Over-All Feedback
-* Edit Ratings
 
 TO-DO Features:
 
 * View Rating
+* Edit Ratings
 * Delete Rating
 * Settings
 	* Change Username
