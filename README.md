@@ -12,7 +12,7 @@ This project is a single base application that allows the user to provide a feed
 
 ## Features
 
-List Of Futures Ready:
+List Of Features Ready:
 
 * Sign Up / Log-In
 * Add Rating (Rooms, Gym and Food)
